@@ -1,0 +1,823 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap .toolBar {
+  position: fixed;
+  z-index: 99;
+  width: 300px;
+  height: 100%;
+  background: #7a6e6e;
+  transition: 0.3s linear;
+  top: 0;
+}
+.wrap .toolBar.toolBarOut {
+  right: 0;
+}
+.wrap .toolBar.toolBarWrap {
+  right: -294px;
+}
+.wrap .toolBar .content {
+  width: 294px;
+  height: 100%;
+  background: bisque;
+  position: relative;
+  left: 6px;
+  z-index: 4;
+}
+.wrap .toolBar .but {
+  width: 35px;
+  height: 35px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  top: 0;
+  left: -29px;
+  cursor: pointer;
+}
+.wrap .toolBar .but.list {
+  background: #7a6e6e url("../img/list.png") center center no-repeat;
+  background-size: cover;
+}
+.wrap .toolBar .but.open {
+  background: #7a6e6e url("../img/cross.png") center center no-repeat;
+  background-size: cover;
+}
+.wrap .toolBar .toolList {
+  position: absolute;
+  left: -29px;
+  width: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200px;
+  background: pink;
+}
+.wrap .toolBar .pull {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: relative;
+}
+.wrap .toolBar .pull .tabIcon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e;
+  position: relative;
+  z-index: 3;
+}
+.wrap .toolBar .pull .vip {
+  background: #7a6e6e url("../img/toolbars.png") -87px -174px no-repeat;
+}
+.wrap .toolBar .pull .cart {
+  background: #7a6e6e url("../img/toolbars.png") -50px 0 no-repeat;
+}
+.wrap .toolBar .pull .follow {
+  background: #7a6e6e url("../img/toolbars.png") -50px -100px no-repeat;
+}
+.wrap .toolBar .pull .history {
+  background: #7a6e6e url("../img/toolbars.png") -190px -150px no-repeat;
+}
+.wrap .toolBar .pull .message {
+  background: #7a6e6e url("../img/toolbars.png") -50px -150px no-repeat;
+}
+.wrap .toolBar .pull .qus {
+  background: #7a6e6e url("../img/toolbars.png") -50px -250px no-repeat;
+}
+.wrap .toolBar .pull em {
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  background: #e1251b;
+  position: absolute;
+  left: 35px;
+  text-align: center;
+  transition: left 0.3s linear 0.1s;
+}
+.wrap .toolBar .back {
+  position: absolute;
+  bottom: 0;
+  left: -29px;
+}
+.wrap .toolBar .back > .top {
+  background: #7a6e6e url("../img/toolbars.png") -50px -250px no-repeat;
+}
+.wrap .header {
+  width: 100%;
+}
+.wrap .header .top {
+  width: 100%;
+  height: 30px;
+  background: #eaeaea;
+}
+.wrap .header .top .container {
+  width: 1200px;
+  height: 30px;
+  margin: 0  auto;
+  line-height: 30px;
+  *zoom: 1;
+}
+.wrap .header .top .container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .top .container .loginList {
+  float: left;
+}
+.wrap .header .top .container .loginList p {
+  float: left;
+  margin-right: 10px;
+}
+.wrap .header .top .container .loginList p .register {
+  padding-left: 5px ;
+  margin-left: 5px;
+  border-left: 1px solid #b3aeae;
+}
+.wrap .header .top .container .typeList {
+  float: right;
+  font-size: 0;
+}
+.wrap .header .top .container .typeList a {
+  font-size: 12px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+.wrap .header .top .container .typeList a + a {
+  border-left: 1px solid #b3aeae;
+}
+.wrap .header .bottom {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.wrap .header .bottom:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .bottom .logoArea {
+  float: left;
+}
+.wrap .header .bottom .logoArea img {
+  width: 175px;
+  height: 56px;
+  margin: 25px 45px;
+}
+.wrap .header .bottom .searchArea {
+  float: right;
+  margin-top: 35px;
+  *zoom: 1;
+}
+.wrap .header .bottom .searchArea:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .bottom .searchArea input {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0px 4px;
+  border: solid #ea4a36 2px;
+  float: left;
+}
+.wrap .header .bottom .searchArea input:focus {
+  outline: none;
+}
+.wrap .header .bottom .searchArea button {
+  width: 68px;
+  height: 32px;
+  background: #ea4a36;
+  color: #fff;
+  border: none;
+  float: left;
+}
+.wrap .header .bottom .searchArea button:focus {
+  outline: none;
+}
+.wrap .typeNav {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #e1251b;
+}
+.wrap .typeNav .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrap .typeNav .container h2 {
+  float: left;
+  width: 210px;
+  height: 50px;
+  color: #fff;
+  background: #e1251b;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+.wrap .typeNav .container nav a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+  line-height: 48px;
+}
+.wrap .con {
+  width: 1200px;
+  margin: 15px auto 0;
+}
+.wrap .con .conPin {
+  padding: 9px 15px 9px 0;
+}
+.wrap .con .conPin i {
+  padding: 0 5px;
+  color: #ccc;
+}
+.wrap .con .mainCon {
+  margin: 5px 0 15px;
+  *zoom: 1;
+}
+.wrap .con .mainCon:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .previewWrap {
+  width: 400px;
+  float: left;
+}
+.wrap .con .mainCon .previewWrap .preview {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #DFDFDF;
+  position: relative;
+}
+.wrap .con .mainCon .previewWrap .preview .zoom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrap .con .mainCon .previewWrap .preview .zoom img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .con .mainCon .previewWrap .preview .zoom .mask {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap .con .mainCon .previewWrap .preview .bigImgBox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 420px;
+  top: 0;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.wrap .con .mainCon .previewWrap .preview .bigImgBox .bigImg {
+  width: 800px;
+  height: 800px;
+}
+.wrap .con .mainCon .previewWrap .specScroll {
+  width: 400px;
+  margin-top: 5px;
+}
+.wrap .con .mainCon .previewWrap .specScroll a {
+  width: 10px;
+  height: 54px;
+  border: 1px solid #ccc;
+  background: #EBEBEB;
+  display: block;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
+}
+.wrap .con .mainCon .previewWrap .specScroll .prev {
+  float: left;
+  margin-right: 4px;
+}
+.wrap .con .mainCon .previewWrap .specScroll .next {
+  float: right;
+}
+.wrap .con .mainCon .previewWrap .specScroll .items {
+  width: 372px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.wrap .con .mainCon .previewWrap .specScroll .items .list {
+  width: 9999px;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  transition: 0.3s linear;
+}
+.wrap .con .mainCon .previewWrap .specScroll .items .list li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+}
+.wrap .con .mainCon .previewWrap .specScroll .items .list li img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .con .mainCon .infoWrap {
+  width: 700px;
+  float: right;
+  margin-top: 15px;
+}
+.wrap .con .mainCon .infoWrap .info1 .h3 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+.wrap .con .mainCon .infoWrap .info1 > p {
+  margin-top: 15px;
+  color: #e12228;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea {
+  margin-top: 10px;
+  line-height: 28px;
+  background: #fee9ec;
+  padding: 7px;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 {
+  *zoom: 1;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .title {
+  margin-right: 15px;
+  float: left;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price {
+  float: left;
+  color: #cc1122;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price i {
+  font-size: 16px;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price em {
+  font-size: 24px;
+  font-weight: bold;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price span {
+  font-size: 12px;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .remark {
+  float: right;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2 {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .title {
+  float: left;
+  margin-right: 15px;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth {
+  width: 520px;
+  float: left;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth i {
+  background: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+.wrap .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth em {
+  color: #999;
+}
+.wrap .con .mainCon .infoWrap .info1 .support {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.wrap .con .mainCon .infoWrap .info1 .support .supportArea {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.wrap .con .mainCon .infoWrap .info1 .support .supportArea:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .infoWrap .info1 .support .supportArea .title {
+  margin-right: 15px;
+  float: left;
+}
+.wrap .con .mainCon .infoWrap .info1 .support .supportArea p {
+  color: #999;
+  float: left;
+}
+.wrap .con .mainCon .choose .chooseArea {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.wrap .con .mainCon .choose .chooseArea .choosed mark {
+  display: inline-block;
+  height: 30px;
+  background: snow;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+.wrap .con .mainCon .choose .chooseArea .choosed mark a {
+  color: red;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrap .con .mainCon .choose .chooseArea dl {
+  margin: 13px 0;
+  *zoom: 1;
+}
+.wrap .con .mainCon .choose .chooseArea dl:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .choose .chooseArea dl dt {
+  margin-right: 15px;
+  float: left;
+}
+.wrap .con .mainCon .choose .chooseArea dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-top: solid 1px #eee;
+  border-left: solid 1px #eee;
+  border-bottom: solid 1px #bbb;
+  border-right: solid 1px #bbb;
+}
+.wrap .con .mainCon .choose .chooseArea dl dd:nth-of-type(1) {
+  color: red;
+}
+.wrap .con .mainCon .cartWrap {
+  *zoom: 1;
+}
+.wrap .con .mainCon .cartWrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .con .mainCon .cartWrap .controls {
+  width: 55px;
+  margin-right: 15px;
+  position: relative;
+  float: left;
+}
+.wrap .con .mainCon .cartWrap .controls input {
+  width: 38px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  color: #555;
+}
+.wrap .con .mainCon .cartWrap .controls a {
+  width: 15px;
+  height: 18px;
+  background: #f1f1f1;
+  color: #666;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.wrap .con .mainCon .cartWrap .controls .puls {
+  position: absolute;
+  right: 0px;
+}
+.wrap .con .mainCon .cartWrap .controls .minus {
+  position: absolute;
+  right: 0px;
+  top: 19px;
+}
+.wrap .con .mainCon .cartWrap .add {
+  padding: 0 25px;
+  height: 36px;
+  line-height: 36px;
+  float: left;
+  background: #e1251b;
+}
+.wrap .con .mainCon .cartWrap .add a {
+  color: #fff;
+  font-size: 16px;
+}
+.wrap .product {
+  width: 1200px;
+  margin: 30px auto 0;
+  *zoom: 1;
+}
+.wrap .product:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .product aside {
+  width: 210px;
+  float: left;
+  border: 1px solid #ccc;
+}
+.wrap .product aside .tabWrap {
+  height: 40px;
+  *zoom: 1;
+}
+.wrap .product aside .tabWrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .product aside .tabWrap h4 {
+  float: left;
+  width: 105px;
+  line-height: 37px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 3px solid #fff;
+}
+.wrap .product aside .tabWrap .active {
+  border-top-color: #e1251b;
+  border-bottom-color: #fff;
+}
+.wrap .product aside .tabContent {
+  padding: 10px;
+}
+.wrap .product aside .tabContent .tabItem {
+  display: none;
+}
+.wrap .product aside .tabContent .tabItem.active {
+  display: block;
+}
+.wrap .product aside .tabContent .tabItem .partList {
+  *zoom: 1;
+}
+.wrap .product aside .tabContent .tabItem .partList:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .product aside .tabContent .tabItem .partList li {
+  width: 50%;
+  float: left;
+  border-bottom: 1px dashed #ededed;
+  line-height: 28px;
+}
+.wrap .product aside .tabContent .tabItem .goodsList li {
+  margin: 5px 0 15px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.wrap .product aside .tabContent .tabItem .goodsList li .gImg {
+  text-align: center;
+}
+.wrap .product aside .tabContent .tabItem .goodsList li .gImg img {
+  width: 152px;
+}
+.wrap .product aside .tabContent .tabItem .goodsList li .price {
+  font-size: 16px;
+  color: #c81623;
+}
+.wrap .product aside .tabContent .tabItem .goodsList li a {
+  border: 1px solid #8c8c8c;
+  display: block;
+  color: #8c8c8c;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90px;
+}
+.wrap .product .detail {
+  float: right;
+  width: 980px;
+}
+.wrap .product .detail .fitting {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.wrap .product .detail .fitting h4 {
+  border-bottom: 1px solid #ddd;
+  background: #f1f1f1;
+  color: #333;
+  padding: 5px 0 5px 15px;
+}
+.wrap .product .detail .fitting .goodSutis {
+  height: 170px;
+  padding-top: 10px;
+}
+.wrap .product .detail .fitting .goodSutis .master {
+  width: 127px;
+  height: 165px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.wrap .product .detail .fitting .goodSutis .master img {
+  width: 87px;
+  display: block;
+  margin: 0 auto;
+}
+.wrap .product .detail .fitting .goodSutis .master p {
+  color: #c81623;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.wrap .product .detail .fitting .goodSutis .master i {
+  position: absolute;
+  top: 48px;
+  right: -25px;
+  font-size: 16px;
+}
+.wrap .product .detail .fitting .goodSutis .suits {
+  float: left;
+  width: 668px;
+  height: 165px;
+}
+.wrap .product .detail .fitting .goodSutis .suits .suitsItem {
+  float: left;
+  height: 127px;
+  margin: 0 20px;
+  text-align: center;
+}
+.wrap .product .detail .fitting .goodSutis .suits .suitsItem img {
+  width: 120px;
+  height: 130px;
+}
+.wrap .product .detail .fitting .goodSutis .result {
+  border-left: 1px solid #ddd;
+  width: 153px;
+  height: 165px;
+  margin-left: 10px;
+  padding-left: 10px;
+  float: right;
+}
+.wrap .product .detail .fitting .goodSutis .result .num {
+  margin: 10px 0;
+}
+.wrap .product .detail .fitting .goodSutis .result .priceTit {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wrap .product .detail .fitting .goodSutis .result .price {
+  color: #B1191A;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.wrap .product .detail .fitting .goodSutis .result .addShopCar {
+  padding: 10px 25px;
+  font-size: 16px;
+  color: #fff;
+  background: #e1251b;
+  border: none;
+}
+.wrap .product .detail .fitting .goodSutis .result .addShopCar:focus {
+  outline: none;
+}
+.wrap .product .detail .intro .tabWrap {
+  background: #ededed;
+  height: 40px;
+  *zoom: 1;
+}
+.wrap .product .detail .intro .tabWrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .product .detail .intro .tabWrap li {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 11px;
+  float: left;
+}
+.wrap .product .detail .intro .tabWrap li:first-child {
+  border-left: 1px solid #ddd;
+}
+.wrap .product .detail .intro .tabWrap .active {
+  background: #ea4a36;
+}
+.wrap .product .detail .intro .tabWrap .active > a {
+  color: #fff;
+}
+.wrap .product .detail .intro .tabContent .tabItem {
+  display: none;
+}
+.wrap .product .detail .intro .tabContent .tabItem.active {
+  display: block;
+}
+.wrap .product .detail .intro .tabContent .tabItem ul li {
+  margin: 10px;
+}
+.wrap .product .detail .intro .tabContent .tabItem img {
+  width: 100%;
+}
+.wrap .other {
+  width: 1198px;
+  border: solid 1px #ddd;
+  height: 270px;
+}
+.wrap .other > p {
+  border-bottom: solid 1px #ddd;
+  color: #333;
+  padding: 5px 10px;
+  background: #ededed;
+}
+.wrap .other .like {
+  padding: 15px 11px;
+}
+.wrap .other .like li {
+  width: 196px;
+  float: left;
+}
+.wrap .other .like li img {
+  width: 167px;
+  height: 123px;
+}
+.wrap .other .like li .introduction {
+  padding: 0 15px;
+}
+.wrap .other .like li .price {
+  page-break-after: 0 15px;
+  font-size: 16px;
+  color: #c81623;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.wrap .other .like li .appraise {
+  padding: 0 15px;
+}
+.wrap .ending {
+  width: 100%;
+  background: #eaeaea;
+  margin-top: 20px;
+}
+.wrap .ending .inside {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrap .ending .inside .top {
+  padding: 20px;
+  border-bottom: solid 1px #e4e1e1;
+  *zoom: 1;
+}
+.wrap .ending .inside .top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .ending .inside .top div {
+  float: left;
+  width: 16.66666%;
+}
+.wrap .ending .inside .top div h4 {
+  font-size: 14px;
+}
+.wrap .ending .inside .bottom {
+  margin: 20px;
+}
+.wrap .ending .inside .bottom ul {
+  text-align: center;
+  *zoom: 1;
+}
+.wrap .ending .inside .bottom ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .ending .inside .bottom ul li {
+  margin: 0 auto;
+  display: inline;
+  padding: 0 10px;
+}
+.wrap .ending .inside .bottom ul li + li {
+  border-left: solid 1px #b3aeae;
+}
+.wrap .ending .inside .bottom p {
+  margin: 10px auto;
+  text-align: center;
+}
